@@ -27,6 +27,14 @@ class Quote extends React.Component {
       author: selectedQuote.author,
       quote: selectedQuote.quote
     }
+    console.log("------------------------------------------");
+    console.log("----       New Quote Seletected       ----");
+    console.log("------------------------------------------");
+    console.log("----    " + this.state.quote);
+    console.log("------------------------------------------");
+    console.log("----    " + this.state.author);
+    console.log("------------------------------------------");
+
     /*return the selected quote*/
     return (
       <div id="quote">

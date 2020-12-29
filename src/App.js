@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Quote from './Quote.js';
 
@@ -16,7 +15,15 @@ class FullQuote extends React.Component {
 
   /*This arrow function forces the update*/
   updateQuote = () => {
+    /*This essentially forces a refresh of the display which in turn re-renders the Quote component*/
     this.forceUpdate();
+
+    /*let the console know*/
+    console.log(" ");
+    console.log("-------------------------");
+    console.log("A New quote has been requested by the user");
+    console.log("-------------------------")
+    console.log(" ");
   }
 
   render() {
@@ -32,10 +39,8 @@ class FullQuote extends React.Component {
       </div>
     );
   }
-  
+
 }
-
-
 
 function App() {
   return (
