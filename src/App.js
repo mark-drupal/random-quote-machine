@@ -37,9 +37,7 @@ class Quote extends React.Component {
 
   constructor() {
     super();
-    /*helper function to select a random quote*/
-
-
+    /*Set up the quote and author in the state object*/
     this.state = {
         quote: this.updateQuote.quote,
         author: this.updateQuote.author
@@ -49,14 +47,19 @@ class Quote extends React.Component {
     render() {
       return (
         <div>
+          {/*As per the requirements for the use case this tage is the quote text*/}
           <p id="quote-text">{this.state.quote}</p>
-        <p id="quote-author">{this.state.author}</p>
-        <button
-          id="new-quote"
-          onClick={this.updateQuote}>
-          New quote
+          {/*As per the requirements for the use case this tag for the author*/}
+          <p id="quote-author">{this.state.author}</p>
+          {/*This is the button which brings back a new quote*/}
+          <button
 
-        </button>
+            id="new-quote"
+            
+            onClick={this.updateQuote}>
+            New quote
+
+          </button>
 
       </div>
     );
