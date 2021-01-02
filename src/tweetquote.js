@@ -39,7 +39,7 @@ class TweetQuote extends React.Component {
       console.log("----------------------------------------------");
 
       /*add the quote and author onto the end of the url into a new variable (not mutating!)*/
-      let tweetUrl = url + sanitisedQuote + "%20%20-%20" + sanitisedAuthor;
+      let tweetUrl = url +" ' " +sanitisedQuote + "  '"+ "%20%20-%20" + sanitisedAuthor;
       console.log("----------------------------------------------");
       console.log("our URL for tweeting will look like this: " + tweetUrl);
       console.log("----------------------------------------------");
@@ -48,6 +48,7 @@ class TweetQuote extends React.Component {
     return(
       <a className="twitter-share-button"
         href= {tweetUrl}
+        target= "_blank"
         data-size="large">
           Tweet
       </a>
