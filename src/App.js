@@ -8,8 +8,8 @@ import Quote from './Quote.js';
 
 class FullQuote extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     /*Set up the quote and author in the state object*/
   }
 
@@ -36,10 +36,10 @@ class FullQuote extends React.Component {
           id="new-quote" onClick={this.updateQuote}>
           New quote
         </button>
+
       </div>
     );
   }
-
 }
 
 function App() {

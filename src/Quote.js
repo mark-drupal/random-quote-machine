@@ -1,5 +1,6 @@
 /*Import the react libary to extend off*/
 import React from 'react'
+import TweetQuote from './tweetquote.js'
 
 /*The quote class will handle creating a new quote*/
 class Quote extends React.Component {
@@ -40,6 +41,10 @@ class Quote extends React.Component {
       <div id="quote">
         <div id="text">{this.state.quote}</div>
         <div id="author">{this.state.author}</div>
+        {/*This is the tweet link - this link explains how to program it: https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview ;*/}
+        <TweetQuote quote={this.state.quote} author={this.state.author} />
+
+
       </div>
     );
   }
