@@ -27,7 +27,7 @@ class FullQuote extends React.Component {
 
 function App() {
   return (
-    <div className="quote-box" className="container-fluid d-flex justify-content-center">
+    <div id = "quote-box" className="container-xl flex-column align-self-center" >
       <FullQuote />
     </div>
   );

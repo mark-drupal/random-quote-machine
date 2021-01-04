@@ -47,11 +47,11 @@ class TweetQuote extends React.Component {
 
 
     return(
-      <a id ="tweet-quote"className="twitter-share-button fa fa-twitter btn btn-outline-secondary"
+      <a id ="tweet-quote" className="fa fa-twitter fa-lg m-2 p-2 btn btn-large btn-primary"
         href= {tweetUrl}
         target= "_top"
         data-size="large">
-          Tweet this quote
+
       </a>
     );
   }

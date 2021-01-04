@@ -55,18 +55,41 @@ class Quote extends React.Component {
 
     /*return the selected quote*/
     return (
-      <div id="quote-box">
-        <div id="text" className="col blockquote font-weight-bold lead d-flex justify-content-center">{this.state.quote}</div>
-        <div id="author" className="col blockquote-footer font-italic  d-flex justify-content-center">{this.state.author}</div>
-        {/*This is the tweet link - this link explains how to program it: https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview ;*/}
-        <TweetQuote className="col " quote={this.state.quote} author={this.state.author} />
-        {/*This is the button that get a new quote calling this.updateQuote*/}
-        <button
-          id="new-quote"
-          className="btn btn-outline-primary btn-large .spinner-border "
-          onClick={this.updateQuote}>
-          New quote
-        </button>
+      <div id="quote-box" className="container-fluid d-flex flex-column align-self-center mt-5 text-center">
+      {/*This is the tweet link - this link explains how to program it: https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview ;*/}
+
+
+
+  `       <div className="d-flex flex-column border rounded shadow bg-secondary m5 p5">
+             <div className=" d-flex flex-column bg-light border rounded align-items-center">
+              <div className=" d-flex flex-row">
+                <i class="m-2 p-2 fa fa-quote-left fa-1x fa-pull-right align-self-start"></i>
+                <div id="text" className="align-self-center mx-auto blockquote text-center font-weight-bold lead m-2 p-2">
+                  {this.state.quote}</div>
+                  <i class="m-2 p-2 fa fa-quote-right fa-1x fa-pull-left align-self-end"></i>
+              </div>
+              <div id="author" className="blockquote-footer font-italic  m-4 p-4"
+                >{this.state.author}</div>
+            </div>
+             <div className="d-flex flex-column ">
+               <div className="col align-self-end">
+                <TweetQuote
+                   className=""
+                   quote={this.state.quote}
+                   author={this.state.author} />
+                   {/*This is the button that get a new quote calling this.updateQuote*/}
+                </div>
+              <div className="col align-self-start">
+                <button
+                   id="new-quote"
+                   className="m-2 p-2 btn btn-large btn-primary align-self-center align-content-center"
+                   onClick={this.updateQuote}>
+                   Get a new quote
+                 </button>
+                </div>
+             </div>
+          </div>
+
       </div>
     );
   }

@@ -4,6 +4,8 @@
 
 }
 
+
+
 /*This is the main container for the application which can be found in app.js*/
 .quote-box{
 
@@ -11,7 +13,7 @@
 
 /*This is the id for the actual quote styling*/
 .text{
-
+  
 }
 
 /*This is the id for the author styling*/
@@ -26,5 +28,5 @@
 
 /*This is id for the tweet quote link text*/
 .tweet-quote{
-  
+
 }
