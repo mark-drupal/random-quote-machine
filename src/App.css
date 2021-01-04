@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+
+/*This is the main div element in index.html which contains the app*/
+.root{
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*This is the main container for the application which can be found in app.js*/
+.quote-box{
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*This is the id for the actual quote styling*/
+.text{
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*This is the id for the author styling*/
+.author{
+
 }
 
-.App-link {
-  color: #61dafb;
+/*This is the styling for the new quote button*/
+.new-quote{
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*This is id for the tweet quote link text*/
+.tweet-quote{
+  
 }

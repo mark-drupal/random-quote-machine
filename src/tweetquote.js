@@ -4,6 +4,7 @@ to make things a bit simpler as I guess thats the idea of React*/
 
 /*import statements*/
 import React from 'react'
+import './App.css';
 
 class TweetQuote extends React.Component {
 
@@ -39,18 +40,18 @@ class TweetQuote extends React.Component {
       console.log("----------------------------------------------");
 
       /*add the quote and author onto the end of the url into a new variable (not mutating!)*/
-      let tweetUrl = url +" ' " +sanitisedQuote + "  '"+ "%20%20-%20" + sanitisedAuthor;
+      let tweetUrl = url +"'" +sanitisedQuote + " '"+ "%20%20-%20" + sanitisedAuthor;
       console.log("----------------------------------------------");
       console.log("our URL for tweeting will look like this: " + tweetUrl);
       console.log("----------------------------------------------");
 
 
     return(
-      <a className="twitter-share-button"
+      <a id ="tweet-quote"className="twitter-share-button fa fa-twitter btn btn-outline-secondary"
         href= {tweetUrl}
-        target= "_blank"
+        target= "_top"
         data-size="large">
-          Tweet
+          Tweet this quote
       </a>
     );
   }
