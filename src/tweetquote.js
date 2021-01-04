@@ -49,7 +49,7 @@ class TweetQuote extends React.Component {
     return(
       <a id ="tweet-quote" className="fa fa-twitter fa-lg m-2 p-2 btn btn-large btn-primary"
         href= {tweetUrl}
-        target= "_top"
+        target= "_blank"
         data-size="large">
 
       </a>
