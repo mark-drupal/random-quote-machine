@@ -22,16 +22,40 @@ class Quote extends React.Component {
       /*This array contains our quotes*/
      let quotes = [
       {
-        "quote":"over the line",
-        "author":"walter"
+        "quote":"If you can dream it, you can achieve it.",
+        "author":"Zig Ziglar"
       },
       {
-        "quote":"she probably kid napped herself",
-        "author":"The Dude"
+        "quote":"We become what we think about",
+        "author":"Earl Nightingale"
       },
       {
-        "quote":"I am staying, I'm drinking my coffee",
-        "author":"Walter"
+        "quote":"Change your thoughts and you change the world",
+        "author":"Norman Vincent Peal"
+      },
+      {
+        "quote":"The most common way people give up their power is by thinking they don't have any",
+        "author":"Alice Walker"
+      },
+      {
+        "quote":"You carn't fall if you don't climb.  But there's no joy in living your whole life on the ground",
+        "author":"Uknown"
+      },
+      {
+        "quote":"Winning isn't everything, but wanting to win is",
+        "author":"Vince Lombardi"
+      },
+      {
+        "quote":"If the wind will not serve, take to the oars",
+        "author":"Latin Proverb - before sailing was invented!?"
+      },
+      {
+        "quote":"There is only one way to avoid criticism: do nothing, say nothing and be nothing.",
+        "author":"Aristotle"
+      },
+      {
+        "quote": "We can easily forgive a child is who afraid of the dark; the real tragedy of life is when men are afraid of the light",
+        "author":"Plato"
       }
     ];
 
